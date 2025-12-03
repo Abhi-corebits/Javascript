@@ -23,16 +23,4 @@ user2.name = "Sidd"
 
 // console.log(newname.slice(-5 , 2));
 
-// Object literals 
-const mysy = Symbol("symbol_one")
-const data = {
-    [mysy] : "hey",  // If we want to use symbol datatype in a object
-    name : "Abhi" ,
-    age : 19 ,
-    days : ["Sunday" , "Monday"]
-}
-
-console.log(data[mysy]);
-console.log(typeof data[mysy]);
-console.log(data["days"]);
 
