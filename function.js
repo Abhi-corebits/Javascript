@@ -17,10 +17,10 @@ console.log(num_adv(5 , 3 , 4))
 
 
 // Another way of declairng a func
-const name = function(naam){
-    console.log(`your name is ${naam}`);   
-}
-name("abhinav")
+// const name = function(naam){
+//     console.log(`your name is ${naam}`);   
+// }
+// name("abhinav")
 
 
 
@@ -28,9 +28,9 @@ name("abhinav")
 // const adv_name = (naam) => console.log(`your name is ${naam}`);   
 // adv_name("siddharth")
 
-( (naam) => {
-    return console.log(`your name is ${naam}`);   
-} ) ( "siddharth" );
+// ( (naam) => {
+//     return console.log(`your name is ${naam}`);   
+// } ) ( "siddharth" );
 
 
 const add = (n1 , n2 ) => (n1 + n2)
@@ -42,4 +42,4 @@ console.log(res);
 // Quick execution of a function 
 // SYNTAX : ()();
 
-( (your_name) => (console.log(`Hey , ${your_name}`)) ) ("Abhi") ;
+( (your_name) => ( console.log(`Hey , ${your_name}`)) )("Abhi");
