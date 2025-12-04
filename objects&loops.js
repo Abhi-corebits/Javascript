@@ -27,6 +27,7 @@ console.log({} = obj["dept_name"][0]); //for list
 
 
 // Advance type of object known as map
+// map is not iterable via for each , for in
 const map = new Map()
 map.set("IT","Vedant")
 map.set("CS","Siddharth")
@@ -56,3 +57,36 @@ for (const key in depts) {
     console.log(key , " " , depts[key]);
     // const element = object[key];
 }
+
+
+// for each loop
+// inside each loop it takes a call back function
+// call back function means passsing a function within a function as arg
+
+arr = ["abhi" , "sidd" , "ved" , "sak"]
+
+// arr.forEach(function (naam){
+//     console.log(naam)
+// })
+
+// arr.forEach( (naam) => {
+//     console.log(naam)
+// } );
+
+// function name(naam){
+//     console.log(naam)
+// }
+// arr.forEach(name);
+
+arr.forEach( (naam, idx , array) => {
+    console.log(naam , idx , array)
+} );
+
+
+
+// filter is used to iterate and to return a ele under certain condition
+const numarr = [1,2,3,4,5,6,7,8]
+
+
+const list = numarr.filter( (num , idx , numarr) => (num > 5))
+console.log(list);
