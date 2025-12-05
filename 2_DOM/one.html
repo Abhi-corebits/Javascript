@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM learning</title>
+</head>
+<body>
+    <div class="bg-black">
+        <h1 id="heading" class="name"> ABHINAV </h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga beatae exercitationem, saepe non voluptatibus quod veniam totam deleniti eveniet sequi magni! Quas nulla eaque blanditiis repudiandae esse distinctio quod quibusdam!</p>
+        <button id="Stop">Stop change</button>
+    </div>
+</body>
+<script>
+  let i = 1;
+
+setTimeout(() => {
+  console.log("hey");
+}, 3000);
+
+    function change_title() {
+        document.querySelector("h1").innerHTML="How Are You?"
+    }
+    let time = setTimeout(change_title , 3000)
+
+    document.querySelector("button").addEventListener("click" , () => clearTimeout(time))
+
+// setInterval(() => {
+//   console.log(i++);
+// }, 1000);
+</script>
+</html>
